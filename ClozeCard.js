@@ -1,5 +1,3 @@
-module.exports = ClozeCard;
-
 function ClozeCard(text, cloze) {
     if (this instanceof ClozeCard){
         if (text.indexOf(cloze) >= 0) {
@@ -13,3 +11,5 @@ function ClozeCard(text, cloze) {
         return new ClozeCard(text, cloze);    
   } 
 };
+
+module.exports = ClozeCard;

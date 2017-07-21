@@ -13,6 +13,17 @@ console.log(firstPresident.back);
 
 console.log("----------------");
 
+var secondPresident = BasicCard(
+    "Who was the second president of the United States?", "John Adams");
+
+// "Who was the first president of the United States?"
+console.log(secondPresident.front); 
+
+// "George Washington"
+console.log(secondPresident.back);
+
+console.log("----------------");
+
 var firstPresidentCloze = ClozeCard(
     "George Washington was the first president of the United States.", "George Washington");
 
@@ -24,6 +35,20 @@ console.log(firstPresidentCloze.partial);
 
 // "George Washington was the first president of the United States.
 console.log(firstPresidentCloze.fullText);
+
+console.log("----------------");
+
+var secondPresidentCloze = ClozeCard(
+    "John Adams was the first president of the United States.", "John Adams");
+
+// "George Washington"
+console.log(secondPresidentCloze.cloze); 
+
+// " ... was the first president of the United States.
+console.log(secondPresidentCloze.partial);
+
+// "George Washington was the first president of the United States.
+console.log(secondPresidentCloze.fullText);
 
 console.log("----------------");
 
